@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:400,600");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+body {
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #393333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+header h3 {
+  color: white;
+  padding-left: 1em;
+}
+
+nav ul li a {
+  color: white;
+}
+
+.intro {
+  background-color: #979494;
+  height: 30vh;
+  padding-left: 1em;
+}
+
+.intro img {
+  right: 0;
+
+  position: absolute;
+  z-index: 3;
+  padding-left: 2em;
+}
+
+.intro h1 {
+  color: white;
+  padding-bottom: 1em;
+}
+
+.intro h4 {
+  padding-top: 2em;
+  padding-bottom: 0.6em;
+  color: black;
+}
+
+.my-picture {
+  height: 60vh;
+  position: relative;
+
+  overflow: hidden;
+  background: url("./../images/my_photo2.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.hide-mobile {
+  display: none;
+}
+.ham-link img {
+  width: 70%;
+}
+
+.lincoln q {
+  font-style: italic;
+}
+
+.skills {
+  background: url("../images/blue_and_grey_deco_mobile.svg") no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.skill_container {
+  background: #393333;
+  border-radius: 20px;
+  margin: 2em auto;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.skill_container h2 {
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+.icons {
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.icons div {
+  width: fit-content;
+  margin: 1.3em;
+}
+
+.icons div img {
+  width: 40px;
+}
+
+.ui-design {
+  display: block;
+}
+.ui-design div {
+  margin: 2em 3em;
+  padding-left: 24%;
+}
+
+.back-end div {
+  margin: 2em;
+}
+
+.back-end div:last-child {
+  margin-top: 3em;
+}
+.back-end {
+  margin-left: 1em;
+}
+.skills ul {
+  padding: 1em;
+}
+.last_sk_cont {
+  margin-bottom: 4em;
+}
+
+/* .square_deco_left {
+  position: absolute;
+  z-index: -2;
+} */
+.projects {
+  text-align: center;
+  padding: 0 1em;
+}
+
+.projects h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #009cc1;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+.projects h1 {
+  padding-bottom: 1em;
+}
+
+.projects p {
+  padding: 0 1em 2em;
+}
+
+.projects img {
+  padding-bottom: 2em;
+}
+
+.blue_back {
+  background-color: #9bebeb;
+  border-radius: 20px;
+}
+
+.about_me {
+  background: #f2f2f2;
+  padding-top: 2em;
+  padding-bottom: 200px;
+  border-radius: 20px;
+}
+
+.about_me img {
+  position: absolute;
+
+  left: 2em;
+}
+.like-you-see {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.like-you-see h2 {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.like-you-see a {
+  text-decoration: none;
+  color: #009cc1;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+footer {
+  background: #393333;
+}
+@media only screen and (max-width: 410px) {
+  .intro img {
+    display: none;
+  }
+
+  .intro h1 {
+    padding-bottom: 0.3em;
+  }
+}
+
+@media only screen and(max-width:550px) {
+  .my-picture {
+    background-position: left 0 bottom -30px;
+  }
+
+  .intro img {
+    display: block;
+  }
+}
+
+@media only screen and(min-width:700px) {
+  .skills {
+    background: url("../images/blue_and_grey_deco.svg") no-repeat;
+  }
+}
