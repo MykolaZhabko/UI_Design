@@ -5,7 +5,45 @@
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
+
 body {
+  margin: 0.1em;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+nav ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: #e2f1f2;
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+}
+nav ul li a {
+  color: rgb(9, 8, 8);
+  text-decoration: none;
+  background-color: #c0caca;
+  display: block;
+  padding: 2em 2em;
+}
+
+nav ul li a:hover {
+  background-color: rgb(235, 242, 242);
+}
+.exit-btn {
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+.exit-btn img {
+  width: 25px;
 }
 
 ul {
@@ -15,25 +53,28 @@ ul {
 }
 
 header {
-  background-color: #393333;
+  background-color: #e4f1f3;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
 }
 
 header h3 {
-  color: white;
+  color: rgb(12, 12, 12);
   padding-left: 1em;
 }
-
-nav ul li a {
-  color: white;
+nav a img {
+  fill: black;
 }
 
 .intro {
   background-color: #979494;
-  height: 30vh;
+  padding-top: 4em;
+  height: 40vh;
   padding-left: 1em;
 }
 
@@ -67,10 +108,7 @@ nav ul li a {
   background-size: cover;
 }
 
-.hide-mobile {
-  display: none;
-}
-.ham-link img {
+.menu {
   width: 70%;
 }
 
@@ -202,6 +240,7 @@ nav ul li a {
 footer {
   background: #393333;
 }
+
 @media only screen and (max-width: 410px) {
   .intro img {
     display: none;
@@ -212,18 +251,189 @@ footer {
   }
 }
 
-@media only screen and(max-width:550px) {
-  .my-picture {
-    background-position: left 0 bottom -30px;
+@media only screen and (min-width: 550px) {
+  header {
+    background: #393333;
+  }
+
+  header h3 {
+    color: white;
+  }
+  header nav ul li a {
+    color: white;
+  }
+
+  .intro {
+    position: absolute;
+    background: #393333;
+    z-index: -1;
+    opacity: 0.7;
+    top: 10vh;
+    left: 0;
+    width: 35%;
+    height: 60vh;
+    border-bottom-right-radius: 30px;
   }
 
   .intro img {
-    display: block;
+    position: relative;
+    padding: 0;
+    padding-top: 8em;
+  }
+
+  .intro p {
+    color: rgb(224, 221, 221);
+  }
+  .intro h4 {
+    color: rgb(163, 163, 163);
+  }
+
+  .my-picture {
+    z-index: -2;
+    background: url("../images/my_photo1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 90vh;
+  }
+  .hide-desktop {
+    display: none;
+  }
+
+  .show-desktop {
+    padding: 0;
+    margin: 0;
+    position: inherit;
+    background: inherit;
+    display: flex;
+    width: inherit;
+  }
+  .show-desktop li a {
+    padding-left: 1em;
+    margin: 0;
+    background: inherit;
+  }
+
+  .show-desktop li a:hover {
+    background: none;
+  }
+
+  header {
+    z-index: 9;
+    position: relative;
   }
 }
 
-@media only screen and(min-width:700px) {
+@media only screen and (min-width: 800px) {
   .skills {
-    background: url("../images/blue_and_grey_deco.svg") no-repeat;
+  }
+  .skills ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+  }
+
+  .like-you-see {
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .like-you-see a {
+    padding-top: 2em;
+    padding-left: 1em;
+  }
+
+  .like-you-see h2 {
+    padding-right: 1em;
+  }
+  .like-you-see div {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+  }
+  footer img {
+    width: 100px;
+    margin-left: 4em;
+  }
+
+  footer div ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer div ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 2em;
+  }
+  footer h4 {
+    color: white;
+    padding-right: 3em;
+  }
+  .about_me {
+    display: block;
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  .about_me h1 {
+    padding: 0;
+    padding-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  body {
+    margin-left: 7em;
+    margin-right: 7em;
+    background: rgb(255, 255, 255);
+  }
+
+  .intro {
+    left: 7em;
+    width: 32%;
+    overflow: hidden;
+  }
+  .intro p {
+    color: rgb(224, 221, 221);
+  }
+
+  /* .projects * {
+    border: 1px solid red;
+  } */
+
+  .projects {
+    display: flex;
+    text-align: left;
+    margin-top: 3em;
+  }
+
+  .projects img {
+    margin-left: 2em;
+    padding-top: 2em;
+  }
+  .projects div {
+    padding-left: 2em;
+  }
+
+  .projects div p {
+    padding: 0;
+    padding-bottom: 2em;
+  }
+  .skills {
+  }
+  .skills ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+  }
+  p {
+    font-size: 1.4em;
   }
 }

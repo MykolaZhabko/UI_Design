@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zhabko Mykola</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="main.js"></script>
   </head>
-  <body>
+  <body onload="load()">
     <header>
       <h3>Zhabko Mykola</h3>
 
       <nav>
-        <a href="#" class="ham-link">
-          <img src="images/ham.svg" alt="hamburger menu" id="ham-btn"
+        <a href="#" class="hide-desktop">
+          <img src="images/ham.svg" alt="hamburger menu" class="menu" id="menu"
         /></a>
 
         <ul class="show-desktop hide-mobile" id="nav">
-          <li><img src="images/exit.svg" alt="exit menu" id="exit-btn" /></li>
+          <li class="exit-btn hide-desktop" id="exit">
+            <img src="images/exit.svg" alt="exit-menu" />
+          </li>
           <li><a href="#">My work</a></li>
           <li><a href="#">My skills</a></li>
           <li><a href="#">About me</a></li>
@@ -41,15 +44,17 @@
     <div class="my-picture"></div>
 
     <div class="projects">
-      <h3>Featured project</h3>
-      <h1>Artificial Intelligence</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam
-        illum rerum ad modi impedit numquam, minus sequi tempore ipsum nostrum,
-        perspiciatis id exercitationem doloribus necessitatibus non debitis
-        voluptatum dolores possimus! Quos rem cupiditate delectus in animi,
-        maiores aperiam aut!
-      </p>
+      <div>
+        <h3>Featured project</h3>
+        <h1>Artificial Intelligence</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam
+          illum rerum ad modi impedit numquam, minus sequi tempore ipsum
+          nostrum, perspiciatis id exercitationem doloribus necessitatibus non
+          debitis voluptatum dolores possimus! Quos rem cupiditate delectus in
+          animi, maiores aperiam aut!
+        </p>
+      </div>
       <img src="images/ai.svg" alt="" />
     </div>
 
@@ -92,39 +97,45 @@
       <!-- <img src="images/square-deco-left.svg" alt="" class="square_deco_left" /> -->
     </div>
     <div class="projects">
-      <h3>Game</h3>
-      <h1>Minesweeper</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam
-        illum rerum ad modi impedit numquam, minus sequi tempore ipsum nostrum,
-        perspiciatis id exercitationem doloribus necessitatibus non debitis
-        voluptatum dolores possimus! Quos rem cupiditate delectus in animi,
-        maiores aperiam aut!
-      </p>
+      <div>
+        <h3>Game</h3>
+        <h1>Minesweeper</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam
+          illum rerum ad modi impedit numquam, minus sequi tempore ipsum
+          nostrum, perspiciatis id exercitationem doloribus necessitatibus non
+          debitis voluptatum dolores possimus! Quos rem cupiditate delectus in
+          animi, maiores aperiam aut!
+        </p>
+      </div>
       <img src="images/minesweeper.svg" alt="" />
     </div>
     <div class="projects blue_back">
-      <h3>Web App</h3>
-      <h1>Online picking list for Warehouse</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam
-        illum rerum ad modi impedit numquam, minus sequi tempore ipsum nostrum,
-        perspiciatis id exercitationem doloribus necessitatibus non debitis
-        voluptatum dolores possimus! Quos rem cupiditate delectus in animi,
-        maiores aperiam aut!
-      </p>
+      <div>
+        <h3>Web App</h3>
+        <h1>Online picking list for Warehouse</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam
+          illum rerum ad modi impedit numquam, minus sequi tempore ipsum
+          nostrum, perspiciatis id exercitationem doloribus necessitatibus non
+          debitis voluptatum dolores possimus! Quos rem cupiditate delectus in
+          animi, maiores aperiam aut!
+        </p>
+      </div>
       <img src="images/picking-list-app.svg" alt="" />
     </div>
     <div class="projects">
-      <h3>Animation</h3>
-      <h1>Animated web page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam
-        illum rerum ad modi impedit numquam, minus sequi tempore ipsum nostrum,
-        perspiciatis id exercitationem doloribus necessitatibus non debitis
-        voluptatum dolores possimus! Quos rem cupiditate delectus in animi,
-        maiores aperiam aut!
-      </p>
+      <div>
+        <h3>Animation</h3>
+        <h1>Animated web page</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam
+          illum rerum ad modi impedit numquam, minus sequi tempore ipsum
+          nostrum, perspiciatis id exercitationem doloribus necessitatibus non
+          debitis voluptatum dolores possimus! Quos rem cupiditate delectus in
+          animi, maiores aperiam aut!
+        </p>
+      </div>
       <img src="images/div-animation.svg" alt="" />
     </div>
     <div class="projects about_me">
@@ -138,11 +149,22 @@
     </div>
 
     <div class="like-you-see">
-      <h2>Like what you see?</h2>
-      <a href="#">Hire me!</a>
+      <div>
+        <h2>Like what you see?</h2>
+        <a href="#">Hire me!</a>
+      </div>
     </div>
 
     <footer>
+      <h4>Zhabko Mykola</h4>
+      <div>
+        <ul>
+          <li><a href="#">My work</a></li>
+          <li><a href="#">My skills</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Hire me</a></li>
+        </ul>
+      </div>
       <img src="images/VAMK.png" alt="" />
     </footer>
   </body>
